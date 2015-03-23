@@ -1,3 +1,7 @@
+## v16 (Mar 23, 2015)
+
+* Added support for cedar-14 stack with NumPy 1.9.1 and SciPy 0.14.0. (@andrewychoi)
+
 ## v15 (June 16, 2014)
 
 * Added support for NumPy 1.8.1 and SciPy 0.14.0. (@thenovices)
