@@ -220,4 +220,6 @@ set-env LD_LIBRARY_PATH '/app/.heroku/vendor/lib:/app/.heroku/python/lib:$LD_LIB
 set-default-env LANG en_US.UTF-8
 set-default-env PYTHONHASHSEED random
 set-default-env PYTHONPATH /app/
-export PATH="/app/.heroku/python/bin/:$PATH"
+export PATH="/app/.heroku/python/bin:$PATH"
+set-default-env PATH "/app/.heroku/python/bin:$PATH"
+set-end PATH "/app/.heroku/python/bin:$PATH"
