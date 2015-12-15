@@ -222,4 +222,4 @@ set-default-env PYTHONHASHSEED random
 set-default-env PYTHONPATH /app/
 export PATH="/app/.heroku/python/bin:$PATH"
 set-default-env PATH "/app/.heroku/python/bin:$PATH"
-set-end PATH "/app/.heroku/python/bin:$PATH"
+set-env PATH "/app/.heroku/python/bin:$PATH"
