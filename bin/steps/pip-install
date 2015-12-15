@@ -5,6 +5,10 @@ source $BIN_DIR/utils
 # Install dependencies with Pip.
 puts-step "Installing dependencies with pip"
 
+export R_HOME=/app/vendor/R
+export PATH="/app/vendor/R/lib:/app/vendor/R/bin:/app/vendor/R:$PATH"
+export LD_LIBRARY_PATH=/app/vendor/.apt/usr/lib/libblas:/app/vendor/.apt/usr/lib/lapack:/app/vendor/.apt/usr/lib/x86_64-linux-gnu:/app/vendor/.apt/usr/lib/i386-linux-gnu:/app/vendor/.apt/usr/lib:/app/.heroku/vendor/lib:/app/.heroku/python/lib:/app/.heroku/python/lib:/usr/local/lib:/usr/lib:/usr/lib/x86_64-linux-gnu:/app/.heroku/vendor/lib
+
 [ ! "$FRESH_PYTHON" ] && bpwatch start pip_install
 [ "$FRESH_PYTHON" ] && bpwatch start pip_install_first
 
